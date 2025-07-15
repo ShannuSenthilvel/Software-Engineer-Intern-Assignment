@@ -1,0 +1,135 @@
+.todo-item {
+  color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item .view-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.todo-item .view-section span {
+  flex-grow: 1;
+  cursor: pointer;
+  padding-right: 15px;
+}
+
+.todo-item .view-section span.completed {
+  text-decoration: line-through;
+  
+}
+.fa-check{
+  color: #eee;
+}
+.fa-edit{
+  color: white;
+}
+
+.fa-trash{
+  color: white;
+}
+
+.todo-item .actions button:nth-child(1):hover i.fa-edit {
+  color: #007bff; 
+}
+
+
+.todo-item .actions button:nth-child(2):hover i.fa-trash {
+  color: rgb(194, 37, 37); 
+}
+.todo-item .actions button {
+  background: none;
+  border: none;
+  color: #777;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 18px;
+  outline: none;
+  transition: color 0.3s ease;
+}
+
+.todo-item .actions button:hover {
+  color: #333;
+}
+
+.todo-item .actions i {
+  pointer-events: none; 
+}
+
+.edit-section {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.edit-section input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.edit-section button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 18px;
+  outline: none;
+  transition: color 0.3s ease;
+}
+
+.edit-section button:hover {
+  color: #0056b3;
+}
+
+
+.todo-item .view-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.todo-item .view-section .complete-button {
+  background: none;
+  border: none;
+  color: #888; 
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 10px;
+  outline: none;
+  transition: color 0.3s ease;
+}
+
+.todo-item .view-section .complete-button:hover {
+  color: #888;
+}
+
+.todo-item .view-section .complete-button .completed-icon {
+  
+  color:  #4cae4c;
+}
+
+.todo-item .view-section .completed-text {
+  text-decoration: line-through;
+  
+}
+
+.todo-item .view-section span {
+  flex-grow: 1;
+  padding-right: 15px;
+}
